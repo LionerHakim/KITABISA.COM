@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Donasi - Kitabisa</title>
-    <!-- Menambahkan Font Awesome untuk ikon -->
+    <title>JRH-KITABISA.COM</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         /* Gaya Umum */
         body {
             margin: 0;
             padding: 0;
-            background: #000; /* Background hitam gelap */
-            color: #fff; /* Teks putih */
+            background: #000;
+            color: #fff;
             font-family: 'Roboto', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
-            overflow-x: hidden; /* Menghindari konten geser kiri-kanan */
+            overflow-x: hidden;
         }
 
-        /* Judul Utama */
         h1 {
-            font-size: 40px;
-            color: #FFD700; /* Warna emas */
+            font-size: clamp(28px, 5vw, 40px); /* Ukuran font responsif */
+            color: #FFD700;
             margin: 40px 0;
             font-weight: bold;
             text-transform: uppercase;
@@ -37,17 +42,13 @@
             transform: scale(1.1);
         }
 
-        /* Sub Judul (lebih kecil dan presisi) */
         h2 {
-            font-size: 20px; /* Ukuran font lebih kecil */
+            font-size: clamp(16px, 4vw, 20px);
             color: #fff;
             max-width: 800px;
-            margin-bottom: 40px;
+            margin: 20px auto;
             font-weight: 300;
             line-height: 1.6;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
             opacity: 0.8;
             transition: opacity 0.3s ease-in-out;
         }
@@ -56,7 +57,6 @@
             opacity: 1;
         }
 
-        /* Konten Gambar */
         .content {
             text-align: center;
             margin: 20px;
@@ -68,7 +68,8 @@
         }
 
         .content img {
-            max-width: 250px;
+            max-width: 100%;
+            height: auto;
             border-radius: 10px;
             margin-bottom: 20px;
             transition: box-shadow 0.3s ease-in-out;
@@ -79,42 +80,39 @@
         }
 
         .content p {
-            font-size: 18px;
+            font-size: clamp(14px, 3vw, 18px);
             color: #fff;
             margin-top: 10px;
-            text-transform: uppercase; /* Huruf kapital */
-            font-weight: bold; /* Efek elegan */
-            letter-spacing: 2px; /* Spasi huruf lebih lebar untuk kesan elegan */
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
             transition: color 0.3s ease;
         }
 
         .content p:hover {
-            color: #FFD700; /* Ganti warna saat hover */
+            color: #FFD700;
         }
 
-        /* Gaya Link */
         .links {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 40px;
             gap: 20px;
-            transition: transform 0.3s ease-in-out;
         }
 
         .links a {
             text-decoration: none;
-            color: #1E90FF; /* Warna biru */
-            font-size: 18px;
+            color: #1E90FF;
+            font-size: clamp(14px, 3vw, 18px);
             font-weight: 500;
             padding: 10px;
             border-radius: 5px;
             background-color: rgba(30, 144, 255, 0.1);
             display: flex;
             align-items: center;
-            gap: 10px; /* Memberikan jarak antara ikon dan teks */
+            gap: 10px;
             transition: background-color 0.3s, transform 0.3s;
-            box-sizing: border-box; /* Efek border-box */
         }
 
         .links a:hover {
@@ -124,15 +122,14 @@
         }
 
         .links i {
-            font-size: 20px; /* Ukuran ikon */
+            font-size: 20px;
         }
 
-        /* Garis Kotak Melengkung dengan Efek Glow Kuning */
         .container {
-            border: 5px solid rgba(255, 215, 0, 0.6); /* Border kuning */
-            border-radius: 20px; /* Melengkungkan sudut */
+            border: 5px solid rgba(255, 215, 0, 0.6);
+            border-radius: 20px;
             padding: 20px;
-            box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.6); /* Efek glow kuning */
+            box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.6);
             margin: 20px;
             width: 90%;
             max-width: 1200px;
@@ -140,13 +137,12 @@
         }
 
         .container:hover {
-            transform: scale(1.02); /* Efek zoom pada container */
+            transform: scale(1.02);
         }
 
-        /* Gaya untuk Footer */
         footer {
             margin-top: 40px;
-            font-size: 14px;
+            font-size: clamp(12px, 2vw, 14px);
             color: #aaa;
         }
     </style>
@@ -157,33 +153,24 @@
         <h1>SEDIKIT DARI ANDA BERARTI SEGALANYA UNTUK MEREKA</h1>
         <h2>Bayangkan, hanya dengan nominal kecil, Anda bisa membantu orang lain bertahan hidup, melanjutkan sekolah, atau mendapatkan makanan. Sedikit dari Anda, adalah segalanya bagi mereka.</h2>
 
-        <!-- Konten Gambar 1 -->
         <div class="content">
-            <img src="foto1.png" alt="Logo Kitabisa"> <!-- Pastikan nama file gambar benar -->
+            <img src="foto1.png" alt="Logo Kitabisa">
             <p>Mari berbagi kebaikan bersama kami</p>
         </div>
 
-        <!-- Konten Gambar 2 -->
         <div class="content">
-            <img src="foto2.png" alt="Foto Donasi"> <!-- Pastikan nama file gambar benar -->
-            <p>"JRH mengajak Anda untuk berbagi kebaikan yang bermakna, karena sedikit dari kita adalah segalanya bagi mereka."
-
- </p>
+            <img src="foto2.png" alt="Foto Donasi">
+            <p>"JRH mengajak Anda untuk berbagi kebaikan yang bermakna."</p>
         </div>
 
         <div class="links">
-            <!-- Link Tentang Kami dengan ikon -->
             <a href="https://kitabisa.com/about-us" target="_blank"><i class="fas fa-info-circle"></i> Tentang Kami</a>
-
-            <!-- Link iOS dengan ikon -->
             <a href="https://apps.apple.com/id/app/kitabisa/id1155602611" target="_blank"><i class="fab fa-apple"></i> Download Aplikasi iOS</a>
-
-            <!-- Link Android dengan ikon -->
             <a href="https://play.google.com/store/apps/details?id=com.kitabisa.android" target="_blank"><i class="fab fa-android"></i> Download Aplikasi Android</a>
         </div>
 
         <footer>
-            <p>&copy;JRH 2024 KITA BISA. SEMUA HAK CIPTA DILINDUNGI</p>
+            <p>&copy; JRH 2024 KITA BISA. SEMUA HAK CIPTA DILINDUNGI</p>
         </footer>
     </div>
 
