@@ -1,11 +1,21 @@
-#About KitaBisa
-https://kitabisa.com
+# KitaBisa.com
 
+A web project inspired by the KitaBisa.com platform and its social-donation concept.
 
-"Bantu Mereka Menemukan Harapan, Saat Dunia Menyisihkan Mereka. Donasi Anda Memberikan Kekuatan yang Tak Ternilai!"
+## 📌 Overview
 
-Keterangan:
+The project presents information and messaging related to helping people in need through donations and community support.
 
-Dunia kadang mengabaikan mereka yang paling membutuhkan, namun dengan donasi Anda, Anda memberikan mereka kekuatan untuk bertahan hidup. Keberadaan Anda dalam bentuk dukungan finansial memberi mereka kesempatan untuk terus berjuang, menjalani kehidupan yang lebih baik, dan meraih impian yang sempat hilang. Donasi Anda adalah cahaya yang memberikan mereka harapan baru, membuktikan bahwa kebaikan masih ada di dunia ini.
+## 💡 Concept
 
----
+> Bantu mereka menemukan harapan saat dunia menyisihkan mereka.
+
+The original repository content is preserved; this README simply provides a clearer project overview.
+
+## 🛠️ Project Status
+
+This repository contains the existing implementation and assets. No application functionality is changed by this documentation cleanup.
+
+## 📄 Note
+
+This is an independent project and should not be interpreted as the official KitaBisa.com website or service.
